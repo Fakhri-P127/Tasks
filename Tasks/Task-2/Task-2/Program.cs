@@ -6,14 +6,13 @@ namespace Task_2
     {
         static void Main(string[] args)
         {
-            int number = Convert.ToInt32(Console.ReadLine()) ;
-            if (number % 2 == 0)
+            string[] words = {"Code Academy","Ordek","Chainsaw","Git","Github","Gitbash","Task" };
+            foreach (string word in words)
             {
-                Console.WriteLine("cutdur");
-            }
-            else
-            {
-                Console.WriteLine("tekdir");
+                if (word.Length > 5)
+                {
+                    Console.WriteLine(word);
+                }
             }
         }
     }
